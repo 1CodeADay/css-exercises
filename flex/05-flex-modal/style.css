@@ -20,6 +20,11 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  /* SOLUTION: well done by myself*/
+  padding: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .icon {
@@ -33,6 +38,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* SOLUTION: good job*/
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +56,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex-shrink: 0;
 }
 
 button {
@@ -67,3 +76,28 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+
+/* SOLUTION */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; is not needed because the default is start*/
+  /* I don't see the need for the align-items: center; */
+  align-items: center;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
+}
+/* The solution TOP provided gives a margin-bottom to header and text */
+
+.text {
+  margin: 16px 0px 16px 0px;
+}
+
+
+
+

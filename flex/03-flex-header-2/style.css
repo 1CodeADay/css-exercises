@@ -12,13 +12,27 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  /* solution */
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+
+  /* box-sizing: border-box;
+  flex-wrap: wrap;
+  align-items: center; */
 }
+
+
+
 
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
   width: 48px;
+
+  /* solution */
   height: 48px;
 }
 
@@ -35,14 +49,60 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+
+  /* solution */
+  /* height: 32px; */
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+
 }
 
 ul {
   list-style-type: none;
+
+  /* solution */
+  display: flex;
+  gap: 16px;
+  padding: 0px;
+  margin: 0;
 }
+
+
+/* solution */
+
+.left-section {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+/* .links > * {
+  flex: 1;
+} */
+
+/* ul > li:nth-child(1) {
+  flex-shrink: 1;
+}
+
+ul > a:nth-child(2) {
+  flex-shrink: 1;
+}
+
+ul > li:nth-child(3) {
+  flex-shrink: 1;
+} */
+
+/* .header > * {
+  flex: 1 1 auto;
+} */
