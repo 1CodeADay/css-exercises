@@ -16,6 +16,10 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  /* SOLUTION */
+  padding: 8px 16px;
+  /* well done */
 }
 
 input {
@@ -24,4 +28,63 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* SOLUTION */
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* well done */
+  /* justify-content: space-between; */
+}
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  /* well done */
+}
+
+
+a {
+  text-decoration: none;
+  color: #666;
+  /* font-weight: 700;  is better that using gray with bold*/
+  /* padding: 0px; this is needless */
+}
+
+ul {
+  padding: 0px;
+  /* solution provided by TOP */
+  list-style-type: none;
+  /* Here and not on the li */
+}
+/* The solution provided by TOP declared ul properties. I chose the class attribute */
+.left-links, .right-links {
+  display: flex;
+  margin: 0px;
+  gap: 16px;
+}
+
+
+li {
+  /* list-style: none; */
+}
+
+.footer {
+  background-color: #eeeeee;
+
+}
+
+.content {
+  /* text-align: center; this does not work when you resize the screen*/
+  /* I thought my solution was enough but I needed to keep the content center if I resize the screen  */
+  /* The following lines solve the issue */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+
 }
